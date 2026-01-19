@@ -1,0 +1,33 @@
+.primary-btn {
+  background-color: #7CFF00;
+  color: #1F2937;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #6ee600;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 255, 0, 0.3);
+}
+
+.outline-btn {
+  background-color: transparent;
+  color: #1F2937;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #1F2937;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.outline-btn:hover {
+  background-color: #1F2937;
+  color: white;
+  transform: translateY(-2px);
+}
