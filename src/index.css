@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,10 +13,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #1F2937;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Hide native scrollbars but preserve scrolling */
+/* WebKit-based browsers */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+html, body {
+  scrollbar-width: none; /* hide scrollbar but keep scroll */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 
 code {

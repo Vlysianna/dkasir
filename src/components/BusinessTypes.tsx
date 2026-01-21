@@ -1,37 +1,48 @@
 const BusinessTypes = () => {
   const businessTypes = [
     { name: "Restoran", icon: "fa-utensils" },
-    { name: "Salon", icon: "fa-cut" },
-    { name: "Cafe", icon: "fa-mug-hot" },
     { name: "Retail", icon: "fa-store" },
-    { name: "Barbershop", icon: "fa-scissors" }
+    { name: "Cafe", icon: "fa-mug-hot" },
+    { name: "Barbershop", icon: "fa-scissors" },
+    { name: "Petshop", icon: "fa-paw" }
   ];
 
   return (
-    <section id="business_types" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Satu Platform Untuk Semua Jenis Usaha
-          </h2>
-          <p className="text-lg text-gray-600">
-            Solusi POS yang fleksibel untuk berbagai jenis bisnis Anda
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+    <section
+      id="business_types"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 flex items-center justify-center"
+      style={{
+        backgroundImage: "url(/bacgkroundtype.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-white/80 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/80 to-transparent" />
+
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#254D00] mb-10">
+          Satu Platform Untuk Semua
+          <br />
+          Jenis Usaha
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
           {businessTypes.map((business, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group"
+              className="bg-white rounded-2xl shadow-md w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              aria-label={business.name}
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-[#7CFF00] rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <i className={`fas ${business.icon} text-3xl text-[#254D00]`}></i>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#254D00] transition-colors duration-300">
-                {business.name}
-              </h3>
+              <i className={`fas ${business.icon} text-2xl sm:text-3xl text-[#7CFF00]`}></i>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <div className="bg-[#254D00] text-white rounded-full px-6 sm:px-10 py-3 text-sm sm:text-base font-medium shadow-lg">
+            Dapat di gunakan untuk jenis usaha : Salon, Petshop, Cafe, Retail & Restaurant
+          </div>
         </div>
       </div>
     </section>
