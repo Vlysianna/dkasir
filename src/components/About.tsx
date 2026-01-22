@@ -10,13 +10,13 @@ const About = () => {
     <section id="about" className="relative -mt-8 lg:-mt-12 pt-0">
       {/* Transisi card rounded dari Hero */}
       <div className=" pt-0 pb-24">
-        <div className="bg-gray-100 rounded-tr-[3rem] md:rounded-tr-[4rem] lg:rounded-tr-[5rem] pt-16 pb-20 border-2 border-gray-300 border-b-0 relative overflow-hidden">
+        <div className="bg-white rounded-tr-[3rem] md:rounded-tr-[4rem] lg:rounded-tr-[5rem] pt-16 pb-20 border-2 border-gray-200 border-b-0 relative overflow-hidden">
           {/* Shape di dekat kasir (kiri) */}
           <div
             aria-hidden="true"
             className={
               "hidden md:block absolute pointer-events-none select-none z-0 bg-[#7CFF00] " +
-              "-left-32 bottom-0 w-[350px] h-[350px] lg:w-[480px] lg:h-[480px] " +
+              "-left-32 bottom-[-10%] w-[350px] h-[350px] lg:w-[480px] lg:h-[480px] " +
               "rounded-full"
             }
           />
@@ -30,20 +30,28 @@ const About = () => {
                   className="w-full h-auto max-w-xl lg:max-w-2xl object-contain"
                 />
               </div>
-              <div className="order-1 lg:order-2">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  Mengelola Bisnis Kini Semakin Mudah dengan dkasir
+              <div className="order-1 lg:order-2 relative">
+                {/* Small circle accent */}
+                <div
+                  aria-hidden="true"
+                  className="hidden sm:block absolute right-0 top-2 w-14 h-14 lg:w-16 lg:h-16 bg-[#7CFF00] rounded-full"
+                />
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 pr-16">
+                  Mengelola Bisnis Kini Semakin Mudah dengan <span className="text-[#7CFF00]">dkasir</span>
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
                   Platform POS terlengkap yang membantu Anda mengelola seluruh aspek bisnis dengan lebih efisien dan terintegrasi
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {features.map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="flex-shrink-0">
-                        <i className="fas fa-check-circle text-[#7CFF00] text-2xl"></i>
-                      </div>
-                      <p className="text-gray-700 text-lg">{feature}</p>
+                    <div
+                      key={index}
+                      className="flex items-center gap-4 border border-[#7CFF00] rounded-full px-4 py-2 bg-white/80"
+                    >
+                      <span className="w-4 h-4 rounded-full bg-[#7CFF00] flex-shrink-0" />
+                      <p className="text-gray-800 text-sm sm:text-base font-medium">
+                        {feature}
+                      </p>
                     </div>
                   ))}
                 </div>

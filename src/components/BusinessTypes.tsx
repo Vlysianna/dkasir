@@ -17,6 +17,7 @@ const BusinessTypes = () => {
         backgroundPosition: "center",
       }}
     >
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]" />
       <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-white/80 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/80 to-transparent" />
 
