@@ -32,7 +32,7 @@ const BusinessTypes = () => {
           {businessTypes.map((business, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="bg-white rounded-full shadow-lg w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1"
               aria-label={business.name}
             >
               <i className={`fas ${business.icon} text-2xl sm:text-3xl text-[#7CFF00]`}></i>

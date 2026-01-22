@@ -8,22 +8,20 @@ const About = () => {
 
   return (
     <section id="about" className="relative -mt-8 lg:-mt-12 pt-0">
-      {/* Transisi card rounded dari Hero */}
       <div className=" pt-0 pb-24">
-        <div className="bg-white rounded-tr-[3rem] md:rounded-tr-[4rem] lg:rounded-tr-[5rem] pt-16 pb-20 border-2 border-gray-200 border-b-0 relative overflow-hidden">
-          {/* Shape di dekat kasir (kiri) */}
+        <div className="bg-white rounded-tr-[3rem] md:rounded-tr-[4rem] lg:rounded-tr-[5rem] pt-16 pb-20 border-2 border-gray-200 border-b-0 relative overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
           <div
             aria-hidden="true"
             className={
               "hidden md:block absolute pointer-events-none select-none z-0 bg-[#7CFF00] " +
-              "-left-32 bottom-[-10%] w-[350px] h-[350px] lg:w-[480px] lg:h-[480px] " +
+              "right-[-1000px] bottom-[-10%] w-[350px] h-[350px] lg:w-[480px] lg:h-[480px] " +
               "rounded-full"
             }
           />
           
           <div className="max-w-7xl px-4 sm:px-6 lg:px-8 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative flex justify-center order-2 lg:order-1">
+              <div className="relative flex justify-center lg:justify-start items-end order-2 lg:order-1 lg:pb-6 lg:-ml-8">
                 <img
                   src="/kasir.png"
                   alt="Kasir"
@@ -31,7 +29,6 @@ const About = () => {
                 />
               </div>
               <div className="order-1 lg:order-2 relative">
-                {/* Small circle accent */}
                 <div
                   aria-hidden="true"
                   className="hidden sm:block absolute right-0 top-2 w-14 h-14 lg:w-16 lg:h-16 bg-[#7CFF00] rounded-full"
