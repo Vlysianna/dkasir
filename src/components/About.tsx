@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section id="about" className="relative -mt-8 lg:-mt-12 pt-0">
       <div className=" pt-0 pb-24">
-        <div className="bg-white rounded-tr-[3rem] md:rounded-tr-[4rem] lg:rounded-tr-[5rem] pt-16 pb-20 border-2 border-gray-200 border-b-0 relative overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
+        <div className="bg-white rounded-tr-[3rem] md:rounded-tr-[4rem] lg:rounded-tr-[5rem] max-w-7xl mx-auto pt-16 pb-20 border-2 border-gray-200 border-b-0 relative overflow-hidden shadow-2xl">
           <div
             aria-hidden="true"
             className={
@@ -19,15 +19,18 @@ const About = () => {
             }
           />
           
-          <div className="max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+          <div className="px-4 sm:px-6 lg:px-8 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative flex justify-center lg:justify-start items-end order-2 lg:order-1 lg:pb-6 lg:-ml-8">
+              <div className="absolute left-80 bottom-0 top-80 w-56 h-56 lg:w-72 lg:h-72 bg-[#7CFF00] rounded-full z-0" />
+
+              <div className="absolute flex justify-center lg:justify-start items-end order-2 lg:order-1 -bottom-20 -left-4">
                 <img
                   src="/kasir.png"
                   alt="Kasir"
                   className="w-full h-auto max-w-xl lg:max-w-2xl object-contain"
                 />
               </div>
+              <div className="relative flex justify-center lg:justify-start items-end order-2 lg:order-1"></div>
               <div className="order-1 lg:order-2 relative">
                 <div
                   aria-hidden="true"

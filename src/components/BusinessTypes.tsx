@@ -10,7 +10,11 @@ const BusinessTypes = () => {
   return (
     <section
       id="business_types"
-      className="relative py-24 px-4 sm:px-6 lg:px-8 flex items-center justify-center"
+      className={
+        "relative py-24 px-4 sm:px-6 lg:px-8 flex items-center justify-center " +
+        "before:content-[''] before:absolute before:inset-x-0 before:top-0 before:h-32 " +
+        "before:bg-gradient-to-b before:from-[rgba(0,0,0,0.12)] before:to-transparent"
+      }
       style={{
         backgroundImage: "url(/bacgkroundtype.png)",
         backgroundSize: "cover",

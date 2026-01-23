@@ -51,25 +51,27 @@ const Hero = () => {
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
-              <div
-                aria-hidden="true"
-                className={
-                  "hidden md:block absolute pointer-events-none select-none z-0 bg-gradient-to-br from-[#7CFF00] to-[#37b900] shadow-[0_10px_60px_rgba(17,148,0,0.25)] " +
-                  "md:left-0 md:top-0 md:w-[360px] md:h-[300px] " +
-                  "lg:left-[180px] lg:top-[-120px] lg:w-[622px] lg:h-[565px] " +
-                  "xl:left-[240px] xl:top-[-140px] xl:w-[780px] xl:h-[680px] " +
-                  "md:rounded-tl-[45%_50%] md:rounded-tr-[55%_50%] md:rounded-br-[45%_50%] md:rounded-bl-[55%_50%] " +
-                  "lg:rounded-tl-[45%_50%] lg:rounded-tr-[55%_50%] lg:rounded-br-[45%_50%] lg:rounded-bl-[55%_50%]"
-                }
-              />
-
+            <div
+              aria-hidden="true"
+              className="hidden md:block absolute z-0 pointer-events-none select-none"
+              style={{
+                boxSizing: 'border-box',
+                width: '946px',
+                height: '565px',
+                left: '120%',
+                top: 0,
+                background: '#63C902',
+                borderRadius: '50% / 50%',
+                transform: 'translateX(-50%)',
+              }}
+            />
             <img
               src="/iPad%20Pro%202.png"
               alt="POS System"
               className="relative z-10 w-full max-w-md lg:max-w-lg transform -rotate-12 lg:-rotate-12 -translate-y-10 lg:translate-x-20 xl:translate-x-28"
             />
           </div>
-        </div>
+        </div>  
       </div>
     </section>
   );
