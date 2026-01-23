@@ -8,7 +8,12 @@ export default {
     extend: {
       borderRadius: {
         'ellipse': '50%/38%'
-      }
+      },
+      colors: {
+        primary: '#7CFF00',
+        dark: '#254D00',
+        light: '#E9FFD6',
+      },
     },
   },
   plugins: [],

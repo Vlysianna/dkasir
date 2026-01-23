@@ -10,16 +10,21 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <img src="/logo.png" alt="dkasir" className="h-12 w-auto" />
+            <a href="/" aria-label="Home">
+              <img src="/logo.png" alt="dkasir" className="h-12 w-auto" />
+            </a>
           </div>
 
           <div className="hidden md:flex items-center space-x-12">
             <a href="#hero" className="text-gray-800 hover:text-[#7CFF00] transition-colors duration-300 font-medium text-base">
               Home
             </a>
-            <a href="#features" className="text-gray-800 hover:text-[#7CFF00] transition-colors duration-300 font-medium text-base">
+            <button
+              className="text-gray-800 hover:text-[#7CFF00] transition-colors duration-300 font-medium text-base bg-transparent border-none outline-none cursor-pointer"
+              onClick={() => { window.location.search = 'fitur'; }}
+            >
               Features
-            </a>
+            </button>
             <div className="relative">
               <button
                 onClick={() => setBusinessDropdownOpen(!businessDropdownOpen)}
@@ -68,9 +73,12 @@ const Navbar = () => {
             <a href="#hero" className="block text-gray-700 hover:text-[#7CFF00] transition-colors duration-300 font-medium">
               Home
             </a>
-            <a href="#features" className="block text-gray-700 hover:text-[#7CFF00] transition-colors duration-300 font-medium">
+            <button
+              className="block text-gray-700 hover:text-[#7CFF00] transition-colors duration-300 font-medium w-full text-left bg-transparent border-none outline-none cursor-pointer"
+              onClick={() => { window.location.search = 'fitur'; setMobileMenuOpen(false); }}
+            >
               Features
-            </a>
+            </button>
             <div>
               <button
                 onClick={() => setBusinessDropdownOpen(!businessDropdownOpen)}
