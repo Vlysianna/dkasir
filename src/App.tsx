@@ -1,13 +1,13 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import BusinessTypes from './components/BusinessTypes';
-import Features from './components/Features';
+import Navbar from './components/landingpage/Navbar';
+import Hero from './components/landingpage/Hero';
+import About from './components/landingpage/About';
+import BusinessTypes from './components/landingpage/BusinessTypes';
+import Features from './components/landingpage/Features';
 import FeaturesPage from './components/FeaturesPage';
-import Pricing from './components/Pricing';
-import Blog from './components/Blog';
-import Footer from './components/Footer';
+import Pricing from './components/landingpage/Pricing';
+import Blog from './components/landingpage/Blog';
+import Footer from './components/landingpage/Footer';
 
 function App() {
   // Sementara: tampilkan FeaturesPage jika ada ?fitur di URL
