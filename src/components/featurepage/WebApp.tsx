@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const webAppContents = [
 	{ img: "/iphone-website-1.png" },

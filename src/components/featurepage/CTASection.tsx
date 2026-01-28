@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const CTASection = () => (
   <section id="cms" className="w-full py-16 text-center bg-primary scroll-mt-24">

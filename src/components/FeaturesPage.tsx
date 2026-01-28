@@ -1,5 +1,5 @@
 
-import React from "react";
+
 import HeroSmall from "./featurepage/HeroSmall";
 import FeatureList from "./featurepage/FeatureList";
 import WebApp from "./featurepage/WebApp";
