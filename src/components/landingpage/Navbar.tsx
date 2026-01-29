@@ -20,7 +20,7 @@ const Navbar = () => {
               Home
             </a>
             <a
-              href="/fitur"
+              href="#/fitur"
               className="text-gray-800 hover:text-[#7CFF00] transition-colors duration-300 font-medium text-base"
             >
               Features
@@ -35,13 +35,13 @@ const Navbar = () => {
               </button>
               {businessDropdownOpen && (
                 <div className="absolute top-full left-0 mt-3 w-40 bg-white rounded-lg shadow-lg py-2 border border-gray-100">
-                  <a href="/business?tab=fnb" className="block px-4 py-2.5 text-gray-700 hover:bg-[#7CFF00] hover:text-[#254D00] transition-colors duration-300 text-sm">
+                  <a href="#/business?tab=fnb" className="block px-4 py-2.5 text-gray-700 hover:bg-[#7CFF00] hover:text-[#254D00] transition-colors duration-300 text-sm">
                     F&B
                   </a>
-                  <a href="/business?tab=retail" className="block px-4 py-2.5 text-gray-700 hover:bg-[#7CFF00] hover:text-[#254D00] transition-colors duration-300 text-sm">
+                  <a href="#/business?tab=retail" className="block px-4 py-2.5 text-gray-700 hover:bg-[#7CFF00] hover:text-[#254D00] transition-colors duration-300 text-sm">
                     Retail
                   </a>
-                  <a href="/business?tab=jasa" className="block px-4 py-2.5 text-gray-700 hover:bg-[#7CFF00] hover:text-[#254D00] transition-colors duration-300 text-sm">
+                  <a href="#/business?tab=jasa" className="block px-4 py-2.5 text-gray-700 hover:bg-[#7CFF00] hover:text-[#254D00] transition-colors duration-300 text-sm">
                     Jasa
                   </a>
                 </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
               Home
             </a>
             <a
-              href="/fitur"
+              href="#/fitur"
               className="block text-gray-700 hover:text-[#7CFF00] transition-colors duration-300 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -90,13 +90,13 @@ const Navbar = () => {
               </button>
               {businessDropdownOpen && (
                 <div className="mt-2 ml-4 space-y-2">
-                  <a href="/business?tab=fnb" className="block text-gray-600 hover:text-[#7CFF00] transition-colors duration-300">
+                  <a href="#/business?tab=fnb" className="block text-gray-600 hover:text-[#7CFF00] transition-colors duration-300">
                     F&B
                   </a>
-                  <a href="/business?tab=retail" className="block text-gray-600 hover:text-[#7CFF00] transition-colors duration-300">
+                  <a href="#/business?tab=retail" className="block text-gray-600 hover:text-[#7CFF00] transition-colors duration-300">
                     Retail
                   </a>
-                  <a href="/business?tab=jasa" className="block text-gray-600 hover:text-[#7CFF00] transition-colors duration-300">
+                  <a href="#/business?tab=jasa" className="block text-gray-600 hover:text-[#7CFF00] transition-colors duration-300">
                     Jasa
                   </a>
                 </div>

@@ -9,11 +9,11 @@ import Pricing from './components/landingpage/Pricing';
 import Blog from './components/landingpage/Blog';
 import Footer from './components/landingpage/Footer';
 import BusinessPage from './pages/BusinessPage';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <Routes>
@@ -32,7 +32,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
