@@ -6,17 +6,17 @@ const Blog = () => {
       excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ipsum lacus. Aliquam pharetra justo a facilisis tristique. Cras vel aliquam arcu. Vestibulum eget sem quis odio hendrerit blandit. Integer auctor sodales sem vel bibendum. Maecenas feugiat, eros non rutrum elementum, lectus tortor faucibus elit, pretium ultricies orci ipsum ac tellus. Etiam maximus mollis felis, sit amet rhoncus odio porta sed. Etiam eget sem..."
     },
     {
-      image: "/blog-2.png",
+      image: "/blog-1.png",
       title: "Lorem ipsum dolor",
       excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ipsum lacus. Aliquam pharetra justo a facilisis tristique. Cras vel aliquam arcu. Vestibulum eget sem quis odio hendrerit blandit. Integer auctor sodales sem vel bibendum. Maecenas feugiat, eros non rutrum elementum, lectus tortor faucibus elit, pretium ultricies orci ipsum ac tellus. Etiam maximus mollis felis, sit amet rhoncus odio porta sed. Etiam eget sem..."
     },
     {
-      image: "/blog-3.png",
+      image: "/blog-1.png",
       title: "Lorem ipsum dolor",
       excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ipsum lacus. Aliquam pharetra justo a facilisis tristique. Cras vel aliquam arcu. Vestibulum eget sem quis odio hendrerit blandit. Integer auctor sodales sem vel bibendum. Maecenas feugiat, eros non rutrum elementum, lectus tortor faucibus elit, pretium ultricies orci ipsum ac tellus. Etiam maximus mollis felis, sit amet rhoncus odio porta sed. Etiam eget sem..."
     },
     {
-      image: "/blog-4.png",
+      image: "/blog-1.png",
       title: "Lorem ipsum dolor",
       excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ipsum lacus. Aliquam pharetra justo a facilisis tristique. Cras vel aliquam arcu. Vestibulum eget sem quis odio hendrerit blandit. Integer auctor sodales sem vel bibendum. Maecenas feugiat, eros non rutrum elementum, lectus tortor faucibus elit, pretium ultricies orci ipsum ac tellus. Etiam maximus mollis felis, sit amet rhoncus odio porta sed. Etiam eget sem..."
     }
