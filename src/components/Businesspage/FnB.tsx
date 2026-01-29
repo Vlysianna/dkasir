@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 const features = [
 	{
 		icon: "cart",
@@ -39,50 +37,50 @@ const features = [
 	},
 ];
 
-const iconMap: Record<string, JSX.Element> = {
-	cart: (
-		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
-				<path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-12.293-2.707l1.414 1.414c.195.195.451.293.707.293h12c.256 0 .512-.098.707-.293l3.293-3.293c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-2.879 2.879h-10.586l-2.879-2.879c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l3.293 3.293zm13.293-7.293v-2c0-1.104-.896-2-2-2h-8c-1.104 0-2 .896-2 2v2h-2v2h2v8h12v-8h2v-2h-2zm-10 0v-2h8v2h-8z" />
-			</svg>
-		</span>
-	),
-	payment: (
-		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
-				<path d="M20 4h-16c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2v-12c0-1.104-.896-2-2-2zm0 14h-16v-8h16v8zm0-10h-16v-2h16v2z" />
-			</svg>
-		</span>
-	),
-	chart: (
-		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
-				<path d="M3 17h2v-7h-2v7zm4 0h2v-12h-2v12zm4 0h2v-4h-2v4zm4 0h2v-9h-2v9zm4 0h2v-2h-2v2z" />
-			</svg>
-		</span>
-	),
-	users: (
-		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
-				<path d="M16 11c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm-8 0c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5v2.5h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 2.01 1.97 3.45v2.5h6v-2.5c0-2.33-4.67-3.5-7-3.5zm-8-2c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2z" />
-			</svg>
-		</span>
-	),
-	store: (
-		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
-				<path d="M20 6h-16l-2 6v2c0 1.104.896 2 2 2h1v4c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-4h1c1.104 0 2-.896 2-2v-2l-2-6zm-2 14h-12v-4h12v4zm3-8c0 .552-.447 1-1 1h-18c-.553 0-1-.448-1-1v-1h20v1zm-1.618-3l1.382 4h-18.528l1.382-4h15.764z" />
-			</svg>
-		</span>
-	),
-	box: (
-		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
-				<path d="M21 16v-8c0-1.104-.896-2-2-2h-14c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2zm-2 0h-14v-8h14v8zm-7-10c.552 0 1-.447 1-1s-.448-1-1-1-1 .447-1 1 .448 1 1 1z" />
-			</svg>
-		</span>
-	),
-};
+// const iconMap: Record<string, JSX.Element> = {
+// 	cart: (
+// 		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+// 			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
+// 				<path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-12.293-2.707l1.414 1.414c.195.195.451.293.707.293h12c.256 0 .512-.098.707-.293l3.293-3.293c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-2.879 2.879h-10.586l-2.879-2.879c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l3.293 3.293zm13.293-7.293v-2c0-1.104-.896-2-2-2h-8c-1.104 0-2 .896-2 2v2h-2v2h2v8h12v-8h2v-2h-2zm-10 0v-2h8v2h-8z" />
+// 			</svg>
+// 		</span>
+// 	),
+// 	payment: (
+// 		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+// 			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
+// 				<path d="M20 4h-16c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2v-12c0-1.104-.896-2-2-2zm0 14h-16v-8h16v8zm0-10h-16v-2h16v2z" />
+// 			</svg>
+// 		</span>
+// 	),
+// 	chart: (
+// 		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+// 			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
+// 				<path d="M3 17h2v-7h-2v7zm4 0h2v-12h-2v12zm4 0h2v-4h-2v4zm4 0h2v-9h-2v9zm4 0h2v-2h-2v2z" />
+// 			</svg>
+// 		</span>
+// 	),
+// 	users: (
+// 		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+// 			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
+// 				<path d="M16 11c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm-8 0c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5v2.5h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 2.01 1.97 3.45v2.5h6v-2.5c0-2.33-4.67-3.5-7-3.5zm-8-2c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2z" />
+// 			</svg>
+// 		</span>
+// 	),
+// 	store: (
+// 		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+// 			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
+// 				<path d="M20 6h-16l-2 6v2c0 1.104.896 2 2 2h1v4c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-4h1c1.104 0 2-.896 2-2v-2l-2-6zm-2 14h-12v-4h12v4zm3-8c0 .552-.447 1-1 1h-18c-.553 0-1-.448-1-1v-1h20v1zm-1.618-3l1.382 4h-18.528l1.382-4h15.764z" />
+// 			</svg>
+// 		</span>
+// 	),
+// 	box: (
+// 		<span className="inline-block w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+// 			<svg width="24" height="24" fill="#254D00" viewBox="0 0 24 24">
+// 				<path d="M21 16v-8c0-1.104-.896-2-2-2h-14c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2zm-2 0h-14v-8h14v8zm-7-10c.552 0 1-.447 1-1s-.448-1-1-1-1 .447-1 1 .448 1 1 1z" />
+// 			</svg>
+// 		</span>
+// 	),
+// };
 
 
 

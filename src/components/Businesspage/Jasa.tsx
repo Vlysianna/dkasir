@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 const jasaFeatures = [
   {
     icon: "dashboard",
