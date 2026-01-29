@@ -6,7 +6,7 @@ import BusinessTypes from './components/landingpage/BusinessTypes';
 import Features from './components/landingpage/Features';
 import FeaturesPage from './pages/FeaturesPage';
 import Pricing from './components/landingpage/Pricing';
-import Blog from './components/landingpage/Blog';
+// import Blog from './components/landingpage/Blog';
 import Footer from './components/landingpage/Footer';
 import BusinessPage from './pages/BusinessPage';
 import LanggananPage from './pages/LanggananPage';
@@ -26,7 +26,7 @@ function App() {
               <BusinessTypes />
               <Features />
               <Pricing />
-              <Blog />
+              {/* <Blog /> */}
             </>
           } />
           <Route path="/business" element={<BusinessPage />} />

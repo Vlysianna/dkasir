@@ -50,7 +50,6 @@ const WebApp = () => (
 				</div>
 			</div>
 
-			{/* Section 2 - Image Left, Text Right */}
 			<div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
 				<div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
 					<div
@@ -68,14 +67,14 @@ const WebApp = () => (
 						}}
 					/>
 					<img
-						src="/iphone-scan.png"
+						src="/HpMenu.png"
 						alt="Website Scan"
 						className="relative z-20 lg:-translate-x-28 xl:-translate-x-28"
 					/>
 				</div>
 				<div className="flex flex-col gap-6 relative z-10 order-1 lg:order-2">
 					<div>
-						<h3 className="text-2xl font-bold text-gray-900 mb-2">Scan</h3>
+						<h3 className="text-2xl font-bold text-gray-900 mb-2">Menu</h3>
 						<p className="text-gray-600 max-w-md">
 							Kasir digital yang tepat untuk mempercepat proses pembayaran dan layanan pelanggan di bidang jasa.
 						</p>
@@ -86,7 +85,7 @@ const WebApp = () => (
 			<div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
 				<div className="flex flex-col gap-6 relative z-10">
 					<div>
-						<h3 className="text-2xl font-bold text-gray-900 mb-2">Scan</h3>
+						<h3 className="text-2xl font-bold text-gray-900 mb-2">Detail Pesanan</h3>
 						<p className="text-gray-600 max-w-md">
 							Kasir digital yang tepat untuk mempercepat proses pembayaran dan layanan pelanggan di bidang jasa.
 						</p>
@@ -108,7 +107,7 @@ const WebApp = () => (
 						}}
 					/>
 					<img
-						src="/iphone-scan.png"
+						src="/HpOrder.png"
 						alt="Website Scan"
 						className="relative z-20 lg:translate-x-28 xl:translate-x-28"
 					/>
@@ -132,14 +131,14 @@ const WebApp = () => (
 						}}
 					/>
 					<img
-						src="/iphone-scan.png"
+						src="/HpDetailOrder.png"
 						alt="Website Scan"
 						className="relative z-20 lg:-translate-x-28 xl:-translate-x-28"
 					/>
 				</div>
 				<div className="flex flex-col gap-6 relative z-10 order-1 lg:order-2">
 					<div>
-						<h3 className="text-2xl font-bold text-gray-900 mb-2">Scan</h3>
+						<h3 className="text-2xl font-bold text-gray-900 mb-2">Informasi Pembeli</h3>
 						<p className="text-gray-600 max-w-md">
 							Kasir digital yang tepat untuk mempercepat proses pembayaran dan layanan pelanggan di bidang jasa.
 						</p>
@@ -150,7 +149,7 @@ const WebApp = () => (
 			<div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
 				<div className="flex flex-col gap-6 relative z-10">
 					<div>
-						<h3 className="text-2xl font-bold text-gray-900 mb-2">Scan</h3>
+						<h3 className="text-2xl font-bold text-gray-900 mb-2">Rincian Pesanan</h3>
 						<p className="text-gray-600 max-w-md">
 							Kasir digital yang tepat untuk mempercepat proses pembayaran dan layanan pelanggan di bidang jasa.
 						</p>
@@ -172,41 +171,10 @@ const WebApp = () => (
 						}}
 					/>
 					<img
-						src="/iphone-scan.png"
+						src="/HpDetailPesanan.png"
 						alt="Website Scan"
 						className="relative z-20 lg:translate-x-28 xl:translate-x-28"
 					/>
-				</div>
-			</div>
-			<div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-				<div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
-					<div
-						aria-hidden="true"
-						className="hidden md:block absolute z-0 pointer-events-none select-none"
-						style={{
-							boxSizing: 'border-box',
-							width: '946px',
-							height: '665px',
-							right: '120%',
-							top: 0,
-							background: '#63C902',
-							borderRadius: '50% / 50%',
-							transform: 'translateX(50%)',
-						}}
-					/>
-					<img
-						src="/iphone-scan.png"
-						alt="Website Scan"
-						className="relative z-20 lg:-translate-x-28 xl:-translate-x-28"
-					/>
-				</div>
-				<div className="flex flex-col gap-6 relative z-10 order-1 lg:order-2">
-					<div>
-						<h3 className="text-2xl font-bold text-gray-900 mb-2">Scan</h3>
-						<p className="text-gray-600 max-w-md">
-							Kasir digital yang tepat untuk mempercepat proses pembayaran dan layanan pelanggan di bidang jasa.
-						</p>
-					</div>
 				</div>
 			</div>
 		
