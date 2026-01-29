@@ -38,7 +38,7 @@ const features = [
 ];
 
 const FeatureList = () => (
-  <section id="kitchen" className="w-full py-20 bg-white scroll-mt-24">
+  <section id="mobile-app" className="w-full py-20 bg-white scroll-mt-24">
     <div className="max-w-6xl mx-auto px-4">
 
       <div className="mb-12">
@@ -155,26 +155,33 @@ const FeatureList = () => (
                 </div>
               </div>
             </div>
-                  <div className="mb-20">
-                <div className="flex flex-col items-start gap-2 mb-6">
-                  <span 
-                    className="inline-flex items-center justify-center text-base font-bold text-black bg-[#7CFF00] rounded-[10px]"
-                    style={{
-                      width: '380px',
-                      height: '65px',
-                      boxShadow: '0px 38.5px 25.5px rgba(68,68,68,0.06), 0px 20px 13px rgba(68,68,68,0.05), 0px 8.15px 6.52px rgba(68,68,68,0.039), 0px 1.85px 3.15px rgba(68,68,68,0.024)',
-                      clipPath: 'polygon(0 0, 90% 0, 100% 100%, 0% 100%)'
-                    }}
-                  >
-                    List Order Management (Kitchen)
-                  </span>
-                </div>
-                <div className="flex justify-center">
-                  <img src="/ipaddapur.png" alt="List Order Management (Kitchen)" className="w-[600px] max-w-full rounded-2xl shadow-xl border border-green-100" />
-                </div>
+            <div>
       </div>
     </div>
   </section>
 );
 
-export default FeatureList;
+const KitchenSection = () => (
+  <section id="kitchen" className="w-full py-20 bg-white scroll-mt-24">
+    <div className="max-w-6xl mx-auto px-4">
+      <div className="flex flex-col items-start gap-2 mb-6">
+        <span 
+          className="inline-flex items-center justify-center text-base font-bold text-black bg-[#7CFF00] rounded-[10px]"
+          style={{
+            width: '380px',
+            height: '65px',
+            boxShadow: '0px 38.5px 25.5px rgba(68,68,68,0.06), 0px 20px 13px rgba(68,68,68,0.05), 0px 8.15px 6.52px rgba(68,68,68,0.039), 0px 1.85px 3.15px rgba(68,68,68,0.024)',
+            clipPath: 'polygon(0 0, 90% 0, 100% 100%, 0% 100%)'
+          }}
+        >
+          List Order Management (Kitchen)
+        </span>
+      </div>
+      <div className="flex justify-center">
+        <img src="/ipaddapur.png" alt="List Order Management (Kitchen)" className="w-[600px] max-w-full rounded-2xl shadow-xl border border-green-100" />
+      </div>
+    </div>
+  </section>
+);
+
+export { FeatureList, KitchenSection };

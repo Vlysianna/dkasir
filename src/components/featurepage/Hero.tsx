@@ -24,8 +24,15 @@ const HeroSmall = () => (
             <a
               key={tab.label}
               href={tab.anchor}
-              className="px-6 py-2 bg-white rounded-xl shadow-md border border-green-200 text-dark font-semibold text-sm md:text-base transition hover:border-green-400 hover:shadow-lg"
+              className="px-6 py-2 bg-white rounded-xl shadow-md border border-green-200 text-dark font-semibold text-sm md:text-base transition hover:border-green-400 hover:shadow-lg active:bg-green-50"
               style={{ borderBottom: "4px solid #A8FF78" }}
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector(tab.anchor);
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
             >
               {tab.label}
             </a>
