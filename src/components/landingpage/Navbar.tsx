@@ -50,6 +50,9 @@ const Navbar = () => {
             <a href="/#blog" className="text-gray-800 hover:text-[#7CFF00] transition-colors duration-300 font-medium text-base">
               Blog
             </a>
+            <a href="#/langganan" className="text-gray-800 hover:text-[#7CFF00] transition-colors duration-300 font-medium text-base">
+              Langganan
+            </a>
             <button className="bg-[#7CFF00] text-[#254D00] px-6 py-2.5 rounded-full font-semibold hover:bg-[#6EE000] transition-colors duration-300 flex items-center gap-2 text-sm">
               Langganan Sekarang
               <ArrowRight size={16} />
@@ -104,6 +107,9 @@ const Navbar = () => {
             </div>
             <a href="/#blog" className="block text-gray-700 hover:text-[#7CFF00] transition-colors duration-300 font-medium">
               Blog
+            </a>
+            <a href="#/langganan" className="block text-gray-700 hover:text-[#7CFF00] transition-colors duration-300 font-medium">
+              Langganan
             </a>
             <button className="w-full bg-[#7CFF00] text-[#254D00] px-6 py-2 rounded-full font-semibold hover:bg-[#6EE000] transition-colors duration-300">
               Langganan Sekarang

@@ -9,6 +9,8 @@ import Pricing from './components/landingpage/Pricing';
 import Blog from './components/landingpage/Blog';
 import Footer from './components/landingpage/Footer';
 import BusinessPage from './pages/BusinessPage';
+import LanggananPage from './pages/LanggananPage';
+import BlogPage from './pages/Blog';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           } />
           <Route path="/business" element={<BusinessPage />} />
           <Route path="/fitur" element={<FeaturesPage />} />
+          <Route path="/langganan" element={<LanggananPage />} />
+          <Route path="/blog" element={<BlogPage />} />
         </Routes>
         <Footer />
       </div>
