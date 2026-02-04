@@ -113,14 +113,14 @@ const Navbar = () => {
                 <ChevronDown size={16} className={`transition-transform duration-300 ${businessDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {businessDropdownOpen && (
-                <div className="mt-2 ml-4 space-y-2 animate-fadeIn">
-                  <a href="#/business?tab=fnb" className="block text-gray-600 hover:text-[#7CFF00] hover:pl-2 transition-all duration-300 py-2" onClick={() => setMobileMenuOpen(false)}>
+                <div className="mt-2 ml-4 space-y-2 animate-fadeIn bg-gray-50 rounded-lg p-3">
+                  <a href="#/business?tab=fnb" className="block text-gray-600 hover:text-[#7CFF00] hover:bg-[#7CFF00]/10 hover:pl-4 transition-all duration-300 py-2 px-2 rounded" onClick={() => { setMobileMenuOpen(false); setBusinessDropdownOpen(false); }}>
                      F&B
                   </a>
-                  <a href="#/business?tab=retail" className="block text-gray-600 hover:text-[#7CFF00] hover:pl-2 transition-all duration-300 py-2" onClick={() => setMobileMenuOpen(false)}>
+                  <a href="#/business?tab=retail" className="block text-gray-600 hover:text-[#7CFF00] hover:bg-[#7CFF00]/10 hover:pl-4 transition-all duration-300 py-2 px-2 rounded" onClick={() => { setMobileMenuOpen(false); setBusinessDropdownOpen(false); }}>
                      Retail
                   </a>
-                  <a href="#/business?tab=jasa" className="block text-gray-600 hover:text-[#7CFF00] hover:pl-2 transition-all duration-300 py-2" onClick={() => setMobileMenuOpen(false)}>
+                  <a href="#/business?tab=jasa" className="block text-gray-600 hover:text-[#7CFF00] hover:bg-[#7CFF00]/10 hover:pl-4 transition-all duration-300 py-2 px-2 rounded" onClick={() => { setMobileMenuOpen(false); setBusinessDropdownOpen(false); }}>
                     Jasa
                   </a>
                 </div>

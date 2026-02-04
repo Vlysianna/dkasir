@@ -21,9 +21,9 @@ const About = () => {
           
           <div className="px-4 sm:px-6 lg:px-8 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="absolute left-80 bottom-0 top-80 w-56 h-56 lg:w-72 lg:h-72 bg-[#7CFF00] rounded-full z-0" />
+              <div className="hidden lg:block absolute left-80 bottom-0 top-80 w-56 h-56 lg:w-72 lg:h-72 bg-[#7CFF00] rounded-full z-0" />
 
-              <div className="absolute flex justify-center lg:justify-start items-end order-2 lg:order-1 -bottom-20 -left-4">
+              <div className="hidden lg:absolute lg:flex justify-center lg:justify-start items-end order-2 lg:order-1 -bottom-20 -left-4">
                 <img
                   src="/kasir.png"
                   alt="Kasir"
