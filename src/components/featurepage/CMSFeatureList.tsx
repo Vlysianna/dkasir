@@ -67,7 +67,7 @@ const CMSFeatureList = () => (
         </div>
       </div>
 
-      {/* Produk Section */}
+      {/* Produk */}
       <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-16 mb-16">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pr-8">
           <h2 className="text-2xl md:text-3xl font-extrabold text-green-700 mb-2">{cmsFeatures[2].title}</h2>
@@ -80,7 +80,7 @@ const CMSFeatureList = () => (
         </div>
       </div>
 
-      {/* Inventori Section */}
+      {/* Inventori */}
       <div className="flex flex-col md:flex-row-reverse items-center md:items-stretch gap-8 md:gap-16 mb-16">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pl-8">
           <h2 className="text-2xl md:text-3xl font-extrabold text-green-700 mb-2">{cmsFeatures[3].title}</h2>
